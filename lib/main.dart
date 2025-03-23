@@ -33,6 +33,7 @@ class _EventFluxUsageState extends State<EventFluxUsage> {
         mode: WebConfigRequestMode.noCors,
         credentials: WebConfigRequestCredentials.sameOrigin,
         cache: WebConfigRequestCache.noCache,
+        referrer: 'https://event-flux-web-demo.vercel.app/',
         streamRequests: false,
       ),
       onError: (EventFluxException? exception) {
